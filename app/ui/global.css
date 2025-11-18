@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Color Palette */
+
+  /* Background */
+  --bg-primary: #121212;
+  --bg-secondary: #290052;
+
+  /* Text */
+  --text-primary: #E0E0E0;
+  --text-secondary: #8899A6;
+
+  /* Accents */
+  --accent-primary: #7F00FF;
+  --accent-secondary: #6AFB92;
+
+  /* Colors */
+    --burgendy: #ce3788;
+    --lime: #37be37;
+    --sky-blue: #409fc5;
+}
+
 input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
@@ -15,4 +36,33 @@ input[type='number']::-webkit-inner-spin-button {
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.darkbg {
+  background-color: var(--bg-primary);
+  background-image: linear-gradient(
+    180deg, /* This means top-to-bottom */
+    var(--bg-primary), 
+    var(--bg-secondary)
+  );
+  color: var(--text-primary);
+  accent-color: var(--accent-primary);
+  
+}
+
+.pageheader {
+    font-size: 50px;
+    text-decoration: underline 2px var(--accent-primary);
+}
+
+.redtext {
+    color: var(--burgendy);
+}
+
+.greentext {
+    color: var(--lime);
+}
+
+.skybluetext {
+    color: var(--sky-blue);
 }
