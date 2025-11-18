@@ -8,6 +8,7 @@
   /* Background */
   --bg-primary: #121212;
   --bg-secondary: #290052;
+  --bg-tertiary: #000a52;
 
   /* Text */
   --text-primary: #E0E0E0;
@@ -40,14 +41,24 @@ input[type='number']::-webkit-outer-spin-button {
 
 .darkbg {
   background-color: var(--bg-primary);
+  color:  var(--text-primary);
+  accent-color: var(--accent-primary);
+}
+
+.grad1 {
   background-image: linear-gradient(
-    180deg, /* This means top-to-bottom */
+    180deg,
     var(--bg-primary), 
     var(--bg-secondary)
   );
-  color: var(--text-primary);
-  accent-color: var(--accent-primary);
-  
+}
+
+.grad2 {
+  background-image: linear-gradient(
+    180deg,
+    var(--bg-secondary), 
+    var(--bg-tertiary)
+  );
 }
 
 .pageheader {
