@@ -8,7 +8,11 @@
   /* Background */
   --bg-primary: #121212;
   --bg-secondary: #1a0035;
-  --bg-tertiary: #000a52;
+  --bg-tertiary: #15223d;
+  --bg-quaternary: #192c31;
+  --bg-quinary: #003127;
+  --bg-senary: #470038;
+  --bg-septenary: #100029;
 
   /* Text */
   --text-primary: #E0E0E0;
@@ -22,6 +26,8 @@
     --burgendy: #ce3788;
     --lime: #37be37;
     --sky-blue: #409fc5;
+
+    scroll-behavior: smooth;
 }
 
 input[type='number'] {
@@ -58,6 +64,46 @@ input[type='number']::-webkit-outer-spin-button {
     180deg,
     var(--bg-secondary), 
     var(--bg-tertiary)
+  );
+}
+
+.grad2 {
+  background-image: linear-gradient(
+    180deg,
+    var(--bg-secondary), 
+    var(--bg-tertiary)
+  );
+}
+
+.grad3 {
+  background-image: linear-gradient(
+    180deg,
+    var(--bg-tertiary), 
+    var(--bg-quaternary)
+  );
+}
+
+.grad4 {
+  background-image: linear-gradient(
+    180deg,
+    var(--bg-quaternary), 
+    var(--bg-quinary)
+  );
+}
+
+.grad5 {
+  background-image: linear-gradient(
+    180deg,
+    var(--bg-quinary), 
+    var(--bg-senary)
+  );
+}
+
+.grad6 {
+  background-image: linear-gradient(
+    180deg,
+    var(--bg-senary), 
+    var(--bg-septenary)
   );
 }
 
