@@ -1,0 +1,159 @@
+
+          {/* Projects */}
+            <div className="flex flex-col justify-center items-center gap-16 grad3 w-full pt-40 pb-40" id='projects'>
+                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <Image src="/pythonlogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                        <div>
+                            <p className='text-2xl font-bold underline'>Python</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <div>
+                            <p className='text-2xl font-bold underline'>C++</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
+                        </div>
+                        <Image src="/cpplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                    </div>
+                </div>
+
+                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <Image src="/jslogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                        <div>
+                            <p className='text-2xl font-bold underline'>Python</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <div>
+                            <p className='text-2xl font-bold underline'>C++</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
+                        </div>
+                        <Image src="/nodelogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                    </div>
+                </div>
+                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <Image src="/phplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                        <div>
+                            <p className='text-2xl font-bold underline'>Python</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <div>
+                            <p className='text-2xl font-bold underline'>C++</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
+                        </div>
+                        <Image src="/sqllogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                    </div>
+                </div>
+            </div>
+
+            {/* Associations */}
+            <div className="flex flex-col justify-center items-center gap-16 grad4 w-full pt-40 pb-40" id='associations'>
+                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <Image src="/pythonlogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                        <div>
+                            <p className='text-2xl font-bold underline'>Python</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <div>
+                            <p className='text-2xl font-bold underline'>C++</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
+                        </div>
+                        <Image src="/cpplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                    </div>
+                </div>
+
+                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <Image src="/jslogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                        <div>
+                            <p className='text-2xl font-bold underline'>Python</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <div>
+                            <p className='text-2xl font-bold underline'>C++</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
+                        </div>
+                        <Image src="/nodelogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                    </div>
+                </div>
+                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <Image src="/phplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                        <div>
+                            <p className='text-2xl font-bold underline'>Python</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <div>
+                            <p className='text-2xl font-bold underline'>C++</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
+                        </div>
+                        <Image src="/sqllogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                    </div>
+                </div>
+            </div>
+
+            {/* Photography */}
+            <div className="flex flex-col justify-center items-center gap-16 grad5 w-full pt-40 pb-40" id='photography'>
+                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <Image src="/pythonlogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                        <div>
+                            <p className='text-2xl font-bold underline'>Python</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <div>
+                            <p className='text-2xl font-bold underline'>C++</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
+                        </div>
+                        <Image src="/cpplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                    </div>
+                </div>
+
+                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <Image src="/jslogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                        <div>
+                            <p className='text-2xl font-bold underline'>Python</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <div>
+                            <p className='text-2xl font-bold underline'>C++</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
+                        </div>
+                        <Image src="/nodelogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                    </div>
+                </div>
+                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <Image src="/phplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                        <div>
+                            <p className='text-2xl font-bold underline'>Python</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
+                        <div>
+                            <p className='text-2xl font-bold underline'>C++</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
+                        </div>
+                        <Image src="/sqllogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
+                    </div>
+                </div>
+            </div>

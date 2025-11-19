@@ -12,6 +12,7 @@ export default function Page() {
                     alphaParticles={true}
                     cameraDistance={50}
                     />
+            {/* Header */}
             <div className='flex justify-around items-start gap-16 w-full min-h-screen pt-5 pb-20'>
                 <div className='flex flex-col w-5/6 m-10 gap-1 z-1'>
                     <p className='font-serif text-[50px] font-bold'>Logan Ragland</p>
@@ -20,12 +21,12 @@ export default function Page() {
                     <p className='font-serif text-[15px]'>Merging my skills as a developer with my passion for the environment,</p>
                     <p className='font-serif text-[15px]'>I aim to build programs that create positive change in the world"</p>
                 </div>
-                <div className='flex flex-col justify-center items-center mt-[3rem] w-1/6 min-h-screen gap-12 text-slate-400'>
-                    <a href="#skills" className='font-serif text-[20px]'>skills</a>
-                    <a href="#awards" className='font-serif text-[20px]'>awards</a>
-                    <a href="#projects" className='font-serif text-[20px]'>projects</a>
-                    <a href="#associations" className='font-serif text-[20px]'>associations</a>
-                    <a href="#photography" className='font-serif text-[20px]'>photgraphy</a>
+                <div className='flex flex-col justify-center items-center mt-[3rem] w-1/6 min-h-screen text-slate-400'>
+                    <a href="#skills" className='font-serif text-[20px] sectionlink'>skills</a>
+                    <a href="#awards" className='font-serif text-[20px] sectionlink'>awards</a>
+                    <a href="#projects" className='font-serif text-[20px] sectionlink'>projects</a>
+                    <a href="#associations" className='font-serif text-[20px] sectionlink'>associations</a>
+                    <a href="#photography" className='font-serif text-[20px] sectionlink'>photgraphy</a>
                 </div>
             </div>
 
@@ -83,217 +84,47 @@ export default function Page() {
             </div>
 
             {/* Awards */}
-            <div className="flex flex-col justify-center items-center gap-16 grad2 w-full pt-40 pb-40" id='awards'>
+            <div className="flex flex-col justify-center items-center gap-4 grad2 w-full pt-40 pb-40" id='awards'>
+                <p className='text-2xl font-bold underline italic'>Business Professionals of America | Web Application Team | 3rd Nationally (2023)</p>
                 <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/pythonlogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
+                    <div className='flex flex-row justify-start items-center w-full'>{/*card*/}
+                        <Image src="/bpa.png" alt="Logan Ragland Web App Award" width={750} height={750} className="w-54 object-cover z-10"/>
+                        <div className='flex flex-col justify-start'>
+                            <p className='p-10 pt-2 text-left'>
+                                I lead a team for the Business Professionals of America{" "}
+                                <a href="https://bpa.org/students/compete/competitive-event-listing/" className='font-bold underline'>Web Application Team (V04)</a>. 
+                                For this competition, we were tasked with creating a database-driven Website with server-side functionality. 
+                                We chose to make an "all in one" educational website, similar to Canvas, Schoology, and Powerschool. 
+                                This required us to create a complex database, with each page displaying different information based on authorization levels. 
+                                Teachers could upload content, create and join courses, create lessons, quizzes, grade assignments, and much more. 
+                                Students, on the other hand, could only join classes, not create them. They could complete assignments, watch videos, see their grades, and more.
+                                Admins could delete accounts, change authorization level, see all responses, and perform similar backend jobs.
+                                All accounts could change their information, profile picture, username, password, what classes they were in, etc.
+                                If you want to learn more about this site, we made a {" "}
+                                <a href="https://youtu.be/Tp6o5Ow78bU" className='font-bold underline'>walk through video</a> that shows off the capabilities of our website.  
+                            </p>
                         </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/cpplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
                     </div>
                 </div>
-
+                <p className='text-2xl font-bold underline italic mt-20'>Business Professionals of America | Web Design Team | National Competitor (2022)</p>
                 <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/jslogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
+                    <div className='flex flex-row justify-start items-center w-full'>{/*card*/}
+                        <Image src="/bpadesign.jpg" alt="Web Design Group Photo" width={750} height={750} className="w-54 object-cover z-10"/>
+                        <div className='flex flex-col justify-start'>
+                            <p className='p-10 pt-2 text-left'>
+                                I was a national competitor for {" "}
+                                <a href="https://bpa.org/students/compete/competitive-event-listing/" className='font-bold underline'>Web Design (435) Competition</a>. 
+                                For this event, we were tasked with creating a purely front end website. We decided to create a car-sales website.
+                                This project was our first dive
+                                We also did not know about css variables, bootstrap, react, and that you could import repeated code snippits instead of having dozens of copies.   
+                                This project had a significant number of issues that, due to our inexperience, we were unable to see before it was too late.
+                                However, we learned from our errors. We improved on many of the shortcomings of this project to create a far more industry-acceptable program the following year, in the Web Application Competition mentioned prior. 
+                                Additionally, working on this project was a strong introduction to programming in a team, and I learned how to manage a full stack development team. 
+                            </p>
                         </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/nodelogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                    </div>
-                </div>
-                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/phplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/sqllogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
                     </div>
                 </div>
             </div>
-
-            {/* Projects */}
-            <div className="flex flex-col justify-center items-center gap-16 grad3 w-full pt-40 pb-40" id='projects'>
-                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/pythonlogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/cpplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                    </div>
-                </div>
-
-                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/jslogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/nodelogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                    </div>
-                </div>
-                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/phplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/sqllogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                    </div>
-                </div>
-            </div>
-
-            {/* Associations */}
-            <div className="flex flex-col justify-center items-center gap-16 grad4 w-full pt-40 pb-40" id='associations'>
-                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/pythonlogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/cpplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                    </div>
-                </div>
-
-                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/jslogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/nodelogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                    </div>
-                </div>
-                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/phplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/sqllogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                    </div>
-                </div>
-            </div>
-
-            {/* Photography */}
-            <div className="flex flex-col justify-center items-center gap-16 grad5 w-full pt-40 pb-40" id='photography'>
-                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/pythonlogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/cpplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                    </div>
-                </div>
-
-                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/jslogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/nodelogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                    </div>
-                </div>
-                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <Image src="/phplogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                        <div>
-                            <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for simple side projects. Used to create applications that use the OpenAI plug in</p>
-                        </div>
-                    </div>
-                    <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
-                        <div>
-                            <p className='text-2xl font-bold underline'>C++</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My main language for low level programs, applications that need high-performance, and programs that use advanced data structures.</p>
-                        </div>
-                        <Image src="/sqllogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
-                    </div>
-                </div>
-            </div>
-            
             
         </main>
     );

@@ -7,7 +7,7 @@
 
   /* Background */
   --bg-primary: #121212;
-  --bg-secondary: #1a0035;
+  --bg-secondary: #280330;
   --bg-tertiary: #15223d;
   --bg-quaternary: #192c31;
   --bg-quinary: #003127;
@@ -112,14 +112,11 @@ input[type='number']::-webkit-outer-spin-button {
     text-decoration: underline 2px var(--accent-primary);
 }
 
-.redtext {
-    color: var(--burgendy);
+.sectionlink {
+    padding: 40;
 }
 
-.greentext {
-    color: var(--lime);
-}
-
-.skybluetext {
-    color: var(--sky-blue);
+.sectionlink:hover {
+    font-weight: bold;
+    color: var(--text-primary);
 }
