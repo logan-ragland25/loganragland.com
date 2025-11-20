@@ -154,27 +154,31 @@ export default function Page() {
                 <p className='text-[40px] font-bold italic'>I also love photography! Here are some of my favorite pictures I've taken:</p>
                 
                 <div className="w-full max-w px-48 columns-3 space-x-2 space-y-2">
-                    <Image src="/vogue.jpg" alt="Vogue Style Photo" width={1440} height={1920} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    <Image src="/vogue.jpg" alt="Vogue Style" width={1440} height={1920} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
 
-                    <Image src="/birds.jpg" alt="Birds Photo" width={1440} height={960} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    <Image src="/birds.jpg" alt="Birds" width={1440} height={960} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
                     
-                    <Image src="/birdhouse.jpg" alt="Birdhouse Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    <Image src="/birdhouse-min.jpg" alt="Birdhouse" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
                     
-                    <Image src="/ducks.jpeg" alt="Ducks Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    <Image src="/ducks-min.jpeg" alt="Ducks" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
                     
-                    <Image src="/twins.jpg" alt="Twins Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    <Image src="/twins-min.jpg" alt="Twins" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
 
-                    <Image src="/liam.jpg" alt="Liam Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    <Image src="/liam-min.jpg" alt="Liam" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
                     
-                    <Image src="/bus.jpg" alt="Bus Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    <Image src="/bus-min.jpg" alt="Bus" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
 
-                    <Image src="/mountains.png" alt="Mountains Photo" width={4032} height={3024} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    <Image src="/mountains-min.png" alt="Mountains" width={4032} height={3024} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
                    
-                    <Image src="/max.jpg" alt="Twins Photo" width={3521} height={4454} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    <Image src="/max-min.jpg" alt="Max" width={3521} height={4454} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
 
-                    <Image src="/vegas.png" alt="Vegas Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    <Image src="/vegas-min.png" alt="Vegas" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
 
-                    <Image src="/grandcanyon.png" alt="Grand Canyon Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    <Image src="/grandcanyon-min.png" alt="Grand Canyon" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+
+                    <Image src="/grasshopper-min.jpeg" alt="Grasshopper" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+
+                    <Image src="/waterfall-min.png" alt="Waterfall" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
                     
                 </div>
             </div>
