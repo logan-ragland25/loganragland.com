@@ -23,21 +23,20 @@ export default function Page() {
                 </div>
                 <div className='flex flex-col justify-center items-center mt-[3rem] w-1/6 min-h-screen text-slate-400'>
                     <a href="#skills" className='font-serif text-[20px] sectionlink'>skills</a>
-                    <a href="#awards" className='font-serif text-[20px] sectionlink'>awards</a>
+                    <a href="#certifications" className='font-serif text-[20px] sectionlink'>certifications</a>
                     <a href="#projects" className='font-serif text-[20px] sectionlink'>projects</a>
-                    <a href="#associations" className='font-serif text-[20px] sectionlink'>associations</a>
                     <a href="#photography" className='font-serif text-[20px] sectionlink'>photgraphy</a>
                 </div>
             </div>
 
-            {/* Skills */}
+            {/* skills */}
             <div className="flex flex-col justify-center items-center gap-16 grad1 w-full pt-40 pb-40" id='skills'>
                 <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
                     <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
                         <Image src="/pythonlogo.png" alt="Logan Ragland Headshot" width={250} height={250} className="w-28 object-cover"/>
                         <div>
                             <p className='text-2xl font-bold underline'>Python</p>
-                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for quick side projects. Python allowed me to connect to the OpenAI API and send queries to ChatGPT from inside my programs. While I often prefer statically typed skills for their structure and stronger performance, Pythons unrivaled ability to connect to APIs, plug ins, and more make it undoubtably the best option to write many programs.</p>
+                            <p className='flex w-full justify-items-start items-center p-10 pt-2'>My primary language for quick side certifications. Python allowed me to connect to the OpenAI API and send queries to ChatGPT from inside my programs. While I often prefer statically typed skills for their structure and stronger performance, Pythons unrivaled ability to connect to APIs, plug ins, and more make it undoubtably the best option to write many programs.</p>
                         </div>
                     </div>
                     <div className='flex flex-row justify-center items-center w-full'>{/*card*/}
@@ -83,8 +82,31 @@ export default function Page() {
                 </div>
             </div>
 
-            {/* Awards */}
-            <div className="flex flex-col justify-center items-center gap-4 grad2 w-full pt-40 pb-40" id='awards'>
+            {/* certifications */}
+            <div className="flex flex-col justify-center items-center gap-16 grad2 w-full pt-40 pb-40" id='certifications'>
+                <p className='text-2xl font-bold underline italic'>Certifications</p>
+                <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
+                    <div className='flex flex-row justify-start pr-20 items-center w-full'>{/*card*/}
+                        <div className='flex flex-col justify-start'>
+                            <p className='p-10 pb-5 pt-5 text-left italic'>Information Technology Specialist - HTML and CSS</p>
+                            <p className='p-10 pb-5 pt-5 text-left italic'>Information Technology Specialist - Javascript</p>
+                            <p className='p-10 pb-5 pt-5 text-left italic'>Information Technology Specialist - Software Development</p>
+                        </div>
+                        <Image src="/certiport.png" alt="Certiport Logo" width={450} height={100} className="object-cover z-10"/>
+                    </div>
+                    <div className='flex flex-row justify-start pl-20 items-center w-full'>{/*card*/}
+                        <Image src="/dacclogo.png" alt="Certiport Logo" width={450} height={100} className="object-cover z-10"/>
+                        <div className='flex flex-col justify-start'>
+                            <p className='p-10 pb-5 pt-5 text-left italic'>App Development - Database Application Development</p>
+                            <p className='p-10 pb-5 pt-5 text-left italic'>App Development - Computer & Mobile Applications</p>
+                            <p className='p-10 pb-5 pt-5 text-left italic'>App Development - Programming</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* projects */}
+            <div className="flex flex-col justify-center items-center gap-4 grad3 w-full pt-40 pb-40" id='projects'>
                 <p className='text-2xl font-bold underline italic'>Business Professionals of America | Web Application Team | 3rd Nationally (2023)</p>
                 <div className="flex flex-row text-center justify-around w-full pl-40 pr-40">
                     <div className='flex flex-row justify-start items-center w-full'>{/*card*/}
@@ -114,18 +136,102 @@ export default function Page() {
                             <p className='p-10 pt-2 text-left'>
                                 I was a national competitor for {" "}
                                 <a href="https://bpa.org/students/compete/competitive-event-listing/" className='font-bold underline'>Web Design (435) Competition</a>. 
-                                For this event, we were tasked with creating a purely front end website. We decided to create a car-sales website.
-                                This project was our first dive
-                                We also did not know about css variables, bootstrap, react, and that you could import repeated code snippits instead of having dozens of copies.   
-                                This project had a significant number of issues that, due to our inexperience, we were unable to see before it was too late.
-                                However, we learned from our errors. We improved on many of the shortcomings of this project to create a far more industry-acceptable program the following year, in the Web Application Competition mentioned prior. 
-                                Additionally, working on this project was a strong introduction to programming in a team, and I learned how to manage a full stack development team. 
+                                For this event, we were tasked with creating a purely front end website.
+                                This project was our first dive into the world of web languages. We coded this website only using raw HTML, CSS, and JavaScript. 
+                                As our first major project, this was a significant learning experience. 
+                                We quickly realized how difficult creating websites without a library was, which gave us a new found appreciation for why modern tools like Tailwind, React, and Bootstrap exist.   
+                                Although this project had a significant number of issues that, due to our inexperience, we were unable to see before it was too late, we learned from our errors. 
+                                We improved on many of the shortcomings of this project to create a far more industry-acceptable program the following year, in the Web Application Competition mentioned prior. 
+                                Working on this project was a strong introduction to programming in a team and managing a development workflow. 
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
+            {/* photos */}
+            <div className="flex flex-col justify-center items-center gap-4 grad4 w-full pt-40 pb-40" id='photography'>
+                <p className='text-[40px] font-bold italic'>I also love photography! Here are some of my favorite pictures I've taken:</p>
+                
+                <div className="w-full max-w px-48 columns-3 space-x-2 space-y-2">
+                    <Image src="/vogue.jpg" alt="Vogue Style Photo" width={1440} height={1920} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+
+                    <Image src="/birds.jpg" alt="Birds Photo" width={1440} height={960} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    
+                    <Image src="/birdhouse.jpg" alt="Birdhouse Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    
+                    <Image src="/ducks.jpeg" alt="Ducks Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    
+                    <Image src="/twins.jpg" alt="Twins Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+
+                    <Image src="/liam.jpg" alt="Liam Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    
+                    <Image src="/bus.jpg" alt="Bus Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+
+                    <Image src="/mountains.png" alt="Mountains Photo" width={4032} height={3024} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                   
+                    <Image src="/max.jpg" alt="Twins Photo" width={3521} height={4454} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+
+                    <Image src="/vegas.png" alt="Vegas Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+
+                    <Image src="/grandcanyon.png" alt="Grand Canyon Photo" width={6000} height={4000} className="w-full h-auto object-cover z-10 transition-transform hover:scale-110" />
+                    
+                </div>
+            </div>
         </main>
     );
 }
+
+<div className="flex flex-col justify-center items-center gap-4 grad4 w-full pt-40 pb-40" id='photography'>
+    <p className='text-[30px]'>I also love photography! Here are some of my favorite pictures I've taken:</p>
+    
+    {/* 1. This container uses 'flex' but NO 'flex-wrap'.
+      2. We remove 'gap-10' and add a big negative 'space-x-'.
+         Try changing '-space-x-48' to '-space-x-64' or '-space-x-32'.
+    */}
+    <div className="flex flex-row justify-center w-full max-w-6xl px-4 -space-x-48 py-20">
+
+        {/* 3. We give each image 'relative' positioning and a 'z-index'.
+          4. We add 'rotate-' and 'hover:' effects for the "stack"
+        */}
+        <Image 
+            src="/vogue.jpg" 
+            alt="Vogue style photo" 
+            width={400} 
+            height={400} 
+            className="object-cover relative z-10 -rotate-12 transition-transform hover:scale-110 hover:z-50 hover:rotate-0"
+        />
+        
+        <Image 
+            src="/birds.jpg" 
+            alt="Birds photo" 
+            width={400} 
+            height={400} 
+            className="object-cover relative z-20 rotate-3 transition-transform hover:scale-110 hover:z-50 hover:rotate-0"
+        />
+        
+        <Image 
+            src="/twins.jpg" 
+            alt="Twins photo" 
+            width={400} 
+            height={400} 
+            className="object-cover relative z-30 -rotate-6 transition-transform hover:scale-110 hover:z-50 hover:rotate-0"
+        />
+
+        <Image 
+            src="/liam.jpg" 
+            alt="Liam photo" 
+            width={400} 
+            height={400} 
+            className="object-cover relative z-20 rotate-12 transition-transform hover:scale-110 hover:z-50 hover:rotate-0"
+        />
+        
+        <Image 
+            src="/ducks.jpeg" 
+            alt="Ducks photo" 
+            width={400} 
+            height={400} 
+            className="object-cover relative z-10 -rotate-3 transition-transform hover:scale-110 hover:z-50 hover:rotate-0"
+        />
+    </div>
+</div>
