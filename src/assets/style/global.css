@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --primary_bg: #0c191e;
+  --primary_text: #F9E0D9;
+  --primary_link: #fbd1c5;
+  --primary_link_hover: #b28f86;
+  --primary_link_visited: #8f5151;
+}
+
+.primary_background {
+    background-color: var(--primary_bg);
+    color: var(--primary_text);
+}
+
+.link {
+    color: var(--primary_link);
+}
+
+.link:hover {
+    color: var(--primary_link_hover);
+}
+
+.link:visited {
+    color: var(--primary_link_visited);
+}
